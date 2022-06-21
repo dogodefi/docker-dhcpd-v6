@@ -70,6 +70,7 @@ if [ -n "$IFACE" ]; then
     chown dhcpd:dhcpd "$data_dir/dhcpd6.leases"
     if [ -e "$data_dir/dhcpd.leases~" ]; then
         chown dhcpd:dhcpd "$data_dir/dhcpd.leases~"
+    fi
     if [ -e "$data_dir/dhcpd6.leases~" ]; then
         chown dhcpd:dhcpd "$data_dir/dhcpd6.leases~"
     fi
